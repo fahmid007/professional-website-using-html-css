@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #f6f9f6;
+    height: 60px;
+    width: 100%;
+}
+
+.container {
+    padding: 0 8%;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 17px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-family: italic;
+    font-weight: 600;
+}
+
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    padding: 4px 40px;
+    color: #333366;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.main-nav li a:hover {
+    color: #33ccff;
+}
+
+/* Banner Section */
+.banner-section {
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(10px);
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.banner-content span {
+    height: 2px;
+    width: 100%;
+    background: #0043ff;
+    display: block;
+    margin: 20px 0;
+}
+
+.banner-content p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #14a4fa;
+    padding: 10px 25px;
+    margin-top: 50px;
+    font-size: 18px;
+    transition-duration: 0.3;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #14a4fa;
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: #fff;
+    font-size: 24px;
+    transform: translateX(-50%);
+}
+
+.about-section {
+    background: #f6f9f9;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.about-section .container h2 {
+    font-size: 35px;
+    color: #333366;
+    font-weight: 500;
+}
+
+.about-section .container p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.feature-section {
+    padding: 25px 0;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.col span {
+    width: 100px;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+    margin: auto;
+    color: #fff;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px #33333382;
+    background: rgb(51, 204, 255);
+    background: -moz-linear-gradient(90deg, rgba(51, 204, 255, 1) 50%, rgba(102, 204, 255, 1) 50%);
+    background: -webkit-linear-gradient(90deg, rgba(51, 204, 255, 1) 50%, rgba(102, 204, 255, 1) 50%);
+    background: linear-gradient(90deg, rgba(51, 204, 255, 1) 50%, rgba(102, 204, 255, 1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33ccff", endColorstr="#66ccff", GradientType=1);
+    font-size: 45px;
+    padding-bottom: 5px;
+}
+
+.col h3 {
+    font-size: 22px;
+    color: #333366;
+    margin: 20px 0;
+}
+
+.col p {
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.5;
+}
+
+.showcase-section {
+    text-align: center;
+    background: #f6f9f6;
+    padding-bottom: 60px;
+}
+
+.showcase-section h2 {
+    font-size: 35px;
+    color: #333366;
+    font-weight: 500;
+    text-align: center;
+}
+
+.showcase-section p {
+    font-size: 18px;
+    color: #999999;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.showcase-col {
+    position: relative;
+
+}
+
+.showcase-col img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.showcase-col ul {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: flex;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.showcase-col:hover ul {
+    top: 50%;
+    transition: translate(-50%, -50);
+    opacity: 1;
+}
+
+.showcase-col ul li {
+    list-style: none;
+    padding: 6px;
+}
+
+.showcase-col ul li a {
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.showcase-col .overlay {
+    background: rgb(21 164 250 / 90%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transition-duration: 0.3s;
+}
+
+.showcase-col:hover .overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+
+.contact-section {
+    background-image: url(https://goldwallpapers.com/uploads/posts/city-lights-background/city_lights_background_001.jpg);
+    padding: 250px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.contact-section .container {
+    position: relative;
+}
+
+.contact-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(219 28% 25% / 0.9);
+}
+
+.contact-form {
+    width: 50%;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.contact-form form input {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background: transparent;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+.contact-form p {
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background: transparent;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.contact-form form ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form form ul li {
+    list-style: none;
+}
+
+.contact-form form ul li label {
+    font-size: 15px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.contact-form form ul li input[type="submit"] {
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #4476e5;
+    display: inline-block;
+    padding: 10px 28px;
+    color: #fff;
+    border-radius: 5px;
+    transition-duration: 0.03s;
+    cursor: pointer;
+}
+
+.contact-form form ul li input[type="submit"]:hover {
+    background: #15a4fa;
+}
+
+footer {
+    padding: 25px 0;
+    height: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copyright {
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.copyright p {
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.5;
+    /* padding-top: 10px; */
+}
+
+.social {
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+.social ul li a {
+    font-size: 15px;
+    background: #15a4fa;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
